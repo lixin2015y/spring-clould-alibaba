@@ -21,6 +21,7 @@
         <module>api</module>
         <module>nacos-config</module>
         <module>sentinel</module>
+        <module>seata-demo</module>
     </modules>
 
 
