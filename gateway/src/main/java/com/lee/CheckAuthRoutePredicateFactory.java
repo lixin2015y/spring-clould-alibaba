@@ -21,7 +21,6 @@ public class CheckAuthRoutePredicateFactory extends AbstractRoutePredicateFactor
     @Override
     public Predicate<ServerWebExchange> apply(Config config) {
         return (GatewayPredicate) serverWebExchange -> {
-            System.out.println(config.getName());
             if (config.getName().equals("zhangsan")) {
                 return true;
             }
@@ -32,7 +31,7 @@ public class CheckAuthRoutePredicateFactory extends AbstractRoutePredicateFactor
 
     @Override
     public String name() {
-        return "CheckAuth1";
+        return "CheckAuth";
     }
 
     @Override

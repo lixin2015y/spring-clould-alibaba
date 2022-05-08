@@ -12,11 +12,17 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: order  #路由ID，全局唯一
+        - id: order_route  #路由ID，全局唯一
           uri: http://localhost:8002      #目标微服务的请求地址和端口
           predicates:
             - Path=/order/**   #Path路径匹配
-            - Cookie=username, fox
-            - CheckAuth1=zhangsan
+#            - Cookie=username, fox
+            - CheckAuth=zhangsan
           filters:
             - StripPrefix=1
+            - AddRequestHeader=X-Request-color, red
+            - CheckAuth=name,lixin
+#            - RedirectTo=302, https://www.baidu.com/
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
