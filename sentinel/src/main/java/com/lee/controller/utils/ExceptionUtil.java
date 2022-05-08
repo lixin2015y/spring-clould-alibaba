@@ -1,7 +1,8 @@
 package com.lee.controller.utils;
 
 import com.alibaba.csp.sentinel.slots.block.BlockException;
-import com.lee.common.utils.R;
+import com.lee.utils.R;
+
 
 public class ExceptionUtil {
 

@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.lee.common.xss;
+package com.lee.xss;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;

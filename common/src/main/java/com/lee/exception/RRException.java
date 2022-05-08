@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.lee.common.exception;
+package com.lee.exception;
 
 /**
  * 自定义异常

@@ -6,10 +6,11 @@
  * 版权所有，侵权必究！
  */
 
-package com.lee.common.xss;
+package com.lee.xss;
 
 
-import com.lee.common.exception.RRException;
+
+import com.lee.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**

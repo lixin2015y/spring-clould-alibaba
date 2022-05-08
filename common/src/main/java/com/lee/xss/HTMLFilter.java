@@ -1,4 +1,4 @@
-package com.lee.common.xss;
+package com.lee.xss;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

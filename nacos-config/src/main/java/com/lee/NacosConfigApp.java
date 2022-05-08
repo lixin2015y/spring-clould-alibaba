@@ -2,20 +2,13 @@ package com.lee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.core.env.ConfigurableEnvironment;
 
-import java.util.concurrent.TimeUnit;
-
+@EnableDiscoveryClient
 @SpringBootApplication
 public class NacosConfigApp {
-    public static void main(String[] args) throws InterruptedException {
-        ConfigurableApplicationContext run = SpringApplication.run(NacosConfigApp.class, args);
-        ConfigurableEnvironment environment = run.getEnvironment();
-        while (true) {
-            System.out.println(environment.getProperty("name"));
-            System.out.println(environment.getProperty("age"));
-            TimeUnit.SECONDS.sleep(3);
-        }
+    public static void main(String[] args) {
+        SpringApplication.run(NacosConfigApp.class, args);
     }
 }

@@ -18,6 +18,10 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
@@ -39,11 +43,10 @@
             <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
 
-
         <dependency>
+            <groupId>com.lee</groupId>
             <artifactId>api</artifactId>
             <version>1.0</version>
-            <groupId>com.lee</groupId>
         </dependency>
     </dependencies>
 </project>

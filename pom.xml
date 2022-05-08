@@ -22,6 +22,8 @@
         <module>nacos-config</module>
         <module>sentinel</module>
         <module>seata-demo</module>
+        <module>gateway</module>
+        <module>common</module>
     </modules>
 
 

@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.lee.common.utils;
+package com.lee.utils;
 
 import org.apache.http.HttpStatus;
 
