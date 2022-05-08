@@ -29,7 +29,9 @@ import reactor.core.publisher.Mono;
 import javax.annotation.PostConstruct;
 import java.util.*;
 
-@Configuration
+// 这里不配置流控规则，可以使用控制台面板中API配置
+// 需要对应引入gateway-sentinel依赖
+//@Configuration
 public class GatewayConfiguration {
 
     private final List<ViewResolver> viewResolvers;
