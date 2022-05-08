@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.16.2.218:8848
+  application:
+    name: gateway

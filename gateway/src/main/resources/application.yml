@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.2.218:8848
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: order  #路由ID，全局唯一
+          uri: http://localhost:8002      #目标微服务的请求地址和端口
+          predicates:
+            - Path=/order/**   #Path路径匹配
+          filters:
+            - StripPrefix=1
