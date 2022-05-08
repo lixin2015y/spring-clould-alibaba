@@ -16,5 +16,7 @@ spring:
           uri: http://localhost:8002      #目标微服务的请求地址和端口
           predicates:
             - Path=/order/**   #Path路径匹配
+            - Cookie=username, fox
+            - CheckAuth1=zhangsan
           filters:
             - StripPrefix=1
