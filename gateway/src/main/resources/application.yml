@@ -12,10 +12,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: order_route  #路由ID，全局唯一
-          uri: http://localhost:8002      #目标微服务的请求地址和端口
+        - id: order_route
+          uri: http://localhost:8002
           predicates:
-            - Path=/order/**   #Path路径匹配
+            - Path=/order/**
 #            - Cookie=username, fox
             - CheckAuth=zhangsan
           filters:
